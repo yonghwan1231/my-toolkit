@@ -1,4 +1,4 @@
-import '@/assets/scss/App.scss'
+import 'App.css'
 import { Routes, Route } from 'react-router-dom'
 import { Fragment } from 'react/jsx-runtime'
 import { HttpTest } from 'http/pages/HttpTest'
