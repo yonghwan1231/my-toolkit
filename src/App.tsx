@@ -1,6 +1,13 @@
 import '@/assets/scss/App.scss'
 import { Routes, Route } from 'react-router-dom'
 import { Fragment } from 'react/jsx-runtime'
+import { HttpTest } from 'http/pages/HttpTest'
+import { PaginationTest } from 'pagination/pages/PaginationTest'
+import { ReactQueryToolkitTest } from 'reactQueryToolkit/pages/ReactQueryToolkitTest'
+import { UseFileTest } from 'useFile/pages/UseFileTest'
+import { UseFormxTest } from 'useFormx/pages/UseFormxTest'
+import { UseModalTest } from 'useModal/pages/UseModalTest'
+import { UseQueryStringTest } from 'useQueryString/pages/UseQueryStringTest'
 
 type RouteType = {
   path: string
@@ -19,7 +26,15 @@ const renderRoutes = (routes: RouteType[], parentPath = '') => {
   })
 }
 
-const routes: RouteType[] = [{ path: '/', element: <></> }]
+const routes: RouteType[] = [
+  { path: '/http', element: <HttpTest /> },
+  { path: '/pagination', element: <PaginationTest /> },
+  { path: '/reactQueryToolkit', element: <ReactQueryToolkitTest /> },
+  { path: '/useFile', element: <UseFileTest /> },
+  { path: '/useFormx', element: <UseFormxTest /> },
+  { path: '/useModal', element: <UseModalTest /> },
+  { path: '/useQueryString', element: <UseQueryStringTest /> },
+]
 
 const App = () => {
   return (

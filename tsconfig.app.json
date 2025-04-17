@@ -23,9 +23,7 @@
     "noUncheckedSideEffectImports": true,
 
     "baseUrl": "src",
-    "paths": {
-      "@common": ["common"]
-    }
+    "paths": {}
   },
   "include": ["src"]
 }
